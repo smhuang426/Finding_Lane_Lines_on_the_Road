@@ -1,27 +1,41 @@
 # **Finding Lane Lines on the Road** 
 
+[//]: # (Image References)
+[image1]: ./examples/gray.png "Grayscale"
+[image2]: ./examples/blur.png "Blur"
+[image3]: ./examples/canny.png "Canny"
+[image4]: ./examples/ROI.png "ROI"
+[image5]: ./examples/hough.png "Hough Transform"
+[image6]: ./examples/result.png "Outcome"
+
 ## Writeup
 
 ### 1. Describe pipeline
 
 My pipeline consisted of 5 steps.
 1. Transform color RGB to gray scale image:
-[image1]: ./examples/gray.png "Grayscale"
+
+![alt text][image1]
 
 2. Blur gray scale image so that remove some noise:
-[image2]: ./examples/blur.png "Blur"
+
+![alt text][image2]
 
 3. Use canny edge detection, and edge will left on the image:
-[image3]: ./examples/canny.png "Canny"
+
+![alt text][image3]
 
 4. Choose ROI we want, remove other part we don't care:
-[image4]: ./examples/ROI.png "ROI"
+
+![alt text][image4]
 
 5. Use hough transformation to fine lines, and pick lines we want via its slope:
-[image5]: ./examples/hough.png "Hough Transform"
+
+![alt text][image5]
 
 After above 5 step, we can get this result as below image
-[image6]: ./examples/result.png "Outcome"
+
+![alt text][image6]
 
 
 
