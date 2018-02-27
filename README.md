@@ -12,7 +12,8 @@
 
 ### 1. Describe pipeline
 
-My pipeline consisted of 5 steps.
+* My pipeline consisted of 5 steps.
+
 1. Transform color RGB to gray scale image:
 
 ![alt text][image1]
@@ -39,7 +40,7 @@ After above 5 step, we can get this result as below image
 
 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function.
+* In order to draw a single line on the left and right lanes, I modified the draw_lines() function.
 
 1. I use np.polyfit( x_points, y_points, 1 ) to find polynomial with 1 order ( y = mx + b ) .
   m is slope and b is bias, so that I can get slope directly and divide those line into right and left.
